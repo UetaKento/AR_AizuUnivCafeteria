@@ -13,6 +13,8 @@
                 <model-viewer
                 id="SauceKatsudon_lazy_load"
                 src="3dmodels/SauceKatsudon/SauceKatsudon.glb"
+                ios-src="3dmodels/SauceKatsudon/SauceKatsudon.usdz"
+                alt="ソースカツ丼の3Dモデル"
                 shadow-intensity="1"
                 camera-controls
                 touch-action="pan-y"
@@ -34,6 +36,8 @@
                 <model-viewer
                 id="SauceSasamiKatsudon_lazy_load"
                 src="3dmodels/SauceSasamiKatsudon/SauceSasamiKatsudon.glb"
+                ios-src="3dmodels/SauceSasamiKatsudon/SauceSasamiKatsudon.usdz"
+                alt="ソースささみカツ丼の3Dモデル"
                 shadow-intensity="1"
                 camera-controls
                 touch-action="pan-y"
@@ -47,7 +51,7 @@
                     document.querySelector('#SauceSasamiKatsudon_lazy_load').dismissPoster());
                 </script>
                 <section class="attribution">
-                        <h1>ソースササミカツ丼</h1>
+                        <h1>ソースささみカツ丼</h1>
                 </section>
             </div>
         </div>
@@ -55,43 +59,93 @@
         <div class="container">
             <div class="card">
                 <model-viewer
-                id="SauceKatsudon_lazy_load"
-                src="3dmodels/SauceKatsudon/SauceKatsudon.glb"
+                id="Curry_M_lazy_load"
+                src="3dmodels/Curry_M/Curry_M.glb"
+                ios-src="3dmodels/Curry_M/Curry_M.usdz"
+                alt="カレーMサイズの3Dモデル"
                 shadow-intensity="1"
                 camera-controls
                 touch-action="pan-y"
                 reveal="manual"
                 ar>
-                    <div class="donmono_lazy_load_poster" slot="poster"></div>
-                    <div id="SauceKatsudon" class="button_load" slot="poster">モデルを表示</div>
+                    <div class="curry_lazy_load_poster" slot="poster"></div>
+                    <div id="Curry_M" class="button_load" slot="poster">モデルを表示</div>
                 </model-viewer>
                 <script>
-                    document.querySelector('#SauceKatsudon').addEventListener('click', () => 
-                    document.querySelector('#SauceKatsudon_lazy_load').dismissPoster());
+                    document.querySelector('#Curry_M').addEventListener('click', () => 
+                    document.querySelector('#Curry_M_lazy_load').dismissPoster());
                 </script>
                 <section class="attribution">
-                        <h1>ソースカツ丼</h1>
+                        <h1>カレーM</h1>
                 </section>
             </div>
 
             <div class="card">
                 <model-viewer
-                id="SauceSasamiKatsudon_lazy_load"
-                src="3dmodels/SauceSasamiKatsudon/SauceSasamiKatsudon.glb"
+                id="KatsuCurry_lazy_load"
+                src="3dmodels/KatsuCurry/KatsuCurry.glb"
+                ios-src="3dmodels/KatsuCurry/KatsuCurry.usdz"
+                alt="カツカレーの3Dモデル"
                 shadow-intensity="1"
                 camera-controls
                 touch-action="pan-y"
                 reveal="manual"
                 ar>
-                    <div class="donmono_lazy_load_poster" slot="poster"></div>
-                    <div id="SauceSasamiKatsudon" class="button_load" slot="poster">モデルを表示</div>
+                    <div class="curry_lazy_load_poster" slot="poster"></div>
+                    <div id="KatsuCurry" class="button_load" slot="poster">モデルを表示</div>
                 </model-viewer>
                 <script>
-                    document.querySelector('#SauceSasamiKatsudon').addEventListener('click', () => 
-                    document.querySelector('#SauceSasamiKatsudon_lazy_load').dismissPoster());
+                    document.querySelector('#KatsuCurry').addEventListener('click', () => 
+                    document.querySelector('#KatsuCurry_lazy_load').dismissPoster());
                 </script>
                 <section class="attribution">
-                        <h1>ソースササミカツ丼</h1>
+                        <h1>カツカレー</h1>
+                </section>
+            </div>
+
+            <div class="card">
+                <model-viewer
+                id="KaraageCurry_lazy_load"
+                src="3dmodels/KaraageCurry/KaraageCurry.glb"
+                ios-src="3dmodels/KaraageCurry/KaraageCurry.usdz"
+                alt="唐揚げカレーの3Dモデル"
+                shadow-intensity="1"
+                camera-controls
+                touch-action="pan-y"
+                reveal="manual"
+                ar>
+                    <div class="curry_lazy_load_poster" slot="poster"></div>
+                    <div id="KaraageCurry" class="button_load" slot="poster">モデルを表示</div>
+                </model-viewer>
+                <script>
+                    document.querySelector('#KaraageCurry').addEventListener('click', () => 
+                    document.querySelector('#KaraageCurry_lazy_load').dismissPoster());
+                </script>
+                <section class="attribution">
+                        <h1>唐揚げカレー</h1>
+                </section>
+            </div>
+
+            <div class="card">
+                <model-viewer
+                id="KanazawaCurry_lazy_load"
+                src="3dmodels/KanazawaCurry/KanazawaCurry.glb"
+                ios-src="3dmodels/KanazawaCurry/KanazawaCurry.usdz"
+                alt="唐揚げカレーの3Dモデル"
+                shadow-intensity="1"
+                camera-controls
+                touch-action="pan-y"
+                reveal="manual"
+                ar>
+                    <div class="curry_lazy_load_poster" slot="poster"></div>
+                    <div id="KanazawaCurry" class="button_load" slot="poster">モデルを表示</div>
+                </model-viewer>
+                <script>
+                    document.querySelector('#KanazawaCurry').addEventListener('click', () => 
+                    document.querySelector('#KanazawaCurry_lazy_load').dismissPoster());
+                </script>
+                <section class="attribution">
+                        <h1>金沢カレー</h1>
                 </section>
             </div>
         </div>

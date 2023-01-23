@@ -62,9 +62,9 @@ model-viewer {
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
-    background-image: url("imeges/Logo_donburi.png");
-    background-size: contain;
+    bottom: 10%;
+    background-image: url("imeges/Logo_curry.png");
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
   }
