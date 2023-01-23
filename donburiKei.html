@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ja">
     <head>
-        <title>会津大学 3D学食</title>
         <link rel="stylesheet" href="style.css">
         <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
     </head>
     <body>
-        <h1 align="center">会津大学 3D学食</h1>
-        <h2 align="center">丼もの</h2>
+        <h1>どんぶり系</h1>
         <div class="container">
             <div class="card">
                 <model-viewer
@@ -15,11 +13,12 @@
                 src="3dmodels/SauceKatsudon/SauceKatsudon.glb"
                 shadow-intensity="1"
                 camera-controls
+                autoplay
                 touch-action="pan-y"
                 reveal="manual"
                 ar>
-                    <div class="donmono_lazy_load_poster" slot="poster"></div>
-                    <div id="SauceKatsudon" class="button_load" slot="poster">モデルを表示</div>
+                    <div class="lazy-load-poster" slot="poster"></div>
+                    <div id="SauceKatsudon" class="button-load" slot="poster">モデルを表示</div>
                 </model-viewer>
                 <script>
                     document.querySelector('#SauceKatsudon').addEventListener('click', () => 
@@ -32,29 +31,28 @@
 
             <div class="card">
                 <model-viewer
-                id="SauceSasamiKatsudon_lazy_load"
-                src="3dmodels/SauceSasamiKatsudon/SauceSasamiKatsudon.glb"
+                id="normal"
+                src="3dmodels/SauceKatsudon/SauceKatsudon.glb"
                 shadow-intensity="1"
                 camera-controls
+                autoplay
                 touch-action="pan-y"
-                reveal="manual"
                 ar>
-                    <div class="donmono_lazy_load_poster" slot="poster"></div>
-                    <div id="SauceSasamiKatsudon" class="button_load" slot="poster">モデルを表示</div>
                 </model-viewer>
-                <script>
-                    document.querySelector('#SauceSasamiKatsudon').addEventListener('click', () => 
-                    document.querySelector('#SauceSasamiKatsudon_lazy_load').dismissPoster());
-                </script>
-                <section class="attribution">
-                        <h1>ソースササミカツ丼</h1>
-                </section>
+            </div>
+            
+            <div class="card">
+                    <model-viewer
+                    id="normal"
+                    src="3dmodels/SauceKatsudon/SauceKatsudon.glb"
+                    shadow-intensity="1"
+                    camera-controls
+                    autoplay
+                    touch-action="pan-y"
+                    ar>
+                    </model-viewer>
             </div>
         </div>
-        <h2 align="center">カレーライス</h2>
-        <h2 align="center">ラーメン</h2>
-        <h2 align="center">そば・うどん</h2>
-        <h2 align="center">単品</h2>
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     </body>
 </html>

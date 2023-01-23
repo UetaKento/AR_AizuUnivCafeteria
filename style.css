@@ -9,7 +9,7 @@ body {
 model-viewer {
     width: 100%;
     height: 300px;
-    background-color: #000000;
+    background-color: #ffffff;
   /*   --poster-color: #ffffff00; */
   }
   .container {
@@ -45,19 +45,31 @@ model-viewer {
     margin: 0rem auto 0.25em auto;
   }
 
-  .lazy-load-poster {
+  .donmono_lazy_load_poster {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background-image: url("imeges/UnivofAizu_bg_green.jpeg");
+    background-image: url("imeges/Logo_donburi.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .curry_lazy_load_poster {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: url("imeges/Logo_donburi.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
   }
   
-  .button-load {
+  .button_load {
     background-image: url("imeges/Load-logo-white.svg");
     background-repeat: no-repeat;
     background-size: 24px 24px;
@@ -76,7 +88,7 @@ model-viewer {
     box-shadow: 0 0 8px rgba(0,0,0,.2), 0 0 4px rgba(0,0,0,.25);
     position: absolute;
     left: 50%;
-    bottom: 3%;
+    bottom: 40%;
     transform: translate3d(-50%, -50%, 0);
     z-index: 100;
   }
