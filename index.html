@@ -52,6 +52,49 @@
             </div>
         </div>
         <h2 align="center">カレーライス</h2>
+        <div class="container">
+            <div class="card">
+                <model-viewer
+                id="SauceKatsudon_lazy_load"
+                src="3dmodels/SauceKatsudon/SauceKatsudon.glb"
+                shadow-intensity="1"
+                camera-controls
+                touch-action="pan-y"
+                reveal="manual"
+                ar>
+                    <div class="donmono_lazy_load_poster" slot="poster"></div>
+                    <div id="SauceKatsudon" class="button_load" slot="poster">モデルを表示</div>
+                </model-viewer>
+                <script>
+                    document.querySelector('#SauceKatsudon').addEventListener('click', () => 
+                    document.querySelector('#SauceKatsudon_lazy_load').dismissPoster());
+                </script>
+                <section class="attribution">
+                        <h1>ソースカツ丼</h1>
+                </section>
+            </div>
+
+            <div class="card">
+                <model-viewer
+                id="SauceSasamiKatsudon_lazy_load"
+                src="3dmodels/SauceSasamiKatsudon/SauceSasamiKatsudon.glb"
+                shadow-intensity="1"
+                camera-controls
+                touch-action="pan-y"
+                reveal="manual"
+                ar>
+                    <div class="donmono_lazy_load_poster" slot="poster"></div>
+                    <div id="SauceSasamiKatsudon" class="button_load" slot="poster">モデルを表示</div>
+                </model-viewer>
+                <script>
+                    document.querySelector('#SauceSasamiKatsudon').addEventListener('click', () => 
+                    document.querySelector('#SauceSasamiKatsudon_lazy_load').dismissPoster());
+                </script>
+                <section class="attribution">
+                        <h1>ソースササミカツ丼</h1>
+                </section>
+            </div>
+        </div>
         <h2 align="center">ラーメン</h2>
         <h2 align="center">そば・うどん</h2>
         <h2 align="center">単品</h2>
