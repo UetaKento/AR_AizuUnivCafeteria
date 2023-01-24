@@ -14,32 +14,24 @@
         <meta property="og:site_name" content="Netlify"/>
         <meta property="og:image" content="https://drive.google.com/file/d/1U2W8khKlSkxwEe4K7JDondW4gJUYYu1q/view?usp=sharing"/>
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/a448e2b900.js" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <div class="header-logo-menu">
-            <div id="nav-drawer">
-                <input id="nav-input" type="checkbox" class="nav-unshown">
-                <label id="nav-open" for="nav-input"><span></span></label>
-                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
-                <div id="nav-content">ここに中身を入れる
-                    <ul>
-                        <li><a href="#donmono">コンテンツ01</a></li>
-                        <li><a href="#curry">コンテンツ02</a></li>
-                        <li><a href="#ramen">コンテンツ02</a></li>
-                        <li><a href="#soba_udon">コンテンツ02</a></li>
-                        <li><a href="#tanpin">コンテンツ02</a></li>
-                    </ul>                
-                </div>
+        <div class="box">
+            <button class="btn">
+                <!-- Menu<i class="fas fa-chevron-circle-down"></i> -->
+                <p style="font-size:20px; "><i class="fa-solid fa-bars" aria-hidden="true"></i></p>
+            </button>
+            <div class="panel">
+              <p style="text-align: center;"><a href="#soba_udon">
+                <img src="imeges/Logo_donburi.png" alt="aaa" width="20px" height="20px">
+              </a></p>
+              <p><a href="#ramen">
+                <img src="imeges/Logo_ramen.png" alt="aaa" width="20px" height="20px" style="display: block; margin: auto;">
+              </a></p>
             </div>
-            <div class="logo-area">LOGO</div>
-            <script>
-                $(function() {
-                  $('#nav-content li a').on('click', function(event) {
-                    $('#nav-input').prop('checked', false);
-                  });
-                });
-            </script>
         </div>
     </head>
     <body>
