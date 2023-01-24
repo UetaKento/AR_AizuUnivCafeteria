@@ -16,34 +16,34 @@
         <link rel="stylesheet" href="./style.css">
         <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <div class="header-logo-menu">
+            <div id="nav-drawer">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><span></span></label>
+                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                <div id="nav-content">ここに中身を入れる
+                    <ul>
+                        <li><a href="#donmono">コンテンツ01</a></li>
+                        <li><a href="#curry">コンテンツ02</a></li>
+                        <li><a href="#ramen">コンテンツ02</a></li>
+                        <li><a href="#soba_udon">コンテンツ02</a></li>
+                        <li><a href="#tanpin">コンテンツ02</a></li>
+                    </ul>                
+                </div>
+            </div>
+            <div class="logo-area">LOGO</div>
+            <script>
+                $(function() {
+                  $('#nav-content li a').on('click', function(event) {
+                    $('#nav-input').prop('checked', false);
+                  });
+                });
+            </script>
+        </div>
     </head>
     <body>
         <h1 align="center">会津大学 3D学食</h1>
-
-        <div class="box">
-            <!---->
-            <button class="btn">メニュー<i class="fas fa-home"></i></button>
-            <div class="panel">
-                <ul>
-                    <li>
-                        <a href="#donmono">丼もの</a>
-                    </li>
-                    <li>
-                        <a href="#curry">カレーライス</a>
-                    </li>
-                    <li>
-                        <a href="#ramen">ラーメン</a>
-                    </li>
-                    <li>
-                        <a href="#soba_udon">そば・うどん</a>
-                    </li>
-                    <li>
-                        <a href="#tanpin">単品</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
         <h2 align="center" id="donmono">丼もの</h2>
         <div class="container">
             <div class="card">
