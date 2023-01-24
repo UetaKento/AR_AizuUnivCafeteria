@@ -13,12 +13,38 @@
         <meta property="og:description" content="会津大学の学食を3Dで確認したり、ARでお手元に表示することができるサイトです。" />
         <meta property="og:site_name" content="Netlify"/>
         <meta property="og:image" content="https://drive.google.com/file/d/1U2W8khKlSkxwEe4K7JDondW4gJUYYu1q/view?usp=sharing"/>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="./style.css">
         <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
     <body>
         <h1 align="center">会津大学 3D学食</h1>
-        <h2 align="center">丼もの</h2>
+
+        <div class="box">
+            <!---->
+            <button class="btn">メニュー<i class="fas fa-home"></i></button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <a href="#donmono">丼もの</a>
+                    </li>
+                    <li>
+                        <a href="#curry">カレーライス</a>
+                    </li>
+                    <li>
+                        <a href="#ramen">ラーメン</a>
+                    </li>
+                    <li>
+                        <a href="#soba_udon">そば・うどん</a>
+                    </li>
+                    <li>
+                        <a href="#tanpin">単品</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <h2 align="center" id="donmono">丼もの</h2>
         <div class="container">
             <div class="card">
                 <model-viewer
@@ -67,7 +93,7 @@
             </div>
         </div>
 
-        <h2 align="center">カレーライス</h2>
+        <h2 align="center" id="curry">カレーライス</h2>
         <div class="container">
             <div class="card">
                 <model-viewer
@@ -162,7 +188,7 @@
             </div>
         </div>
 
-        <h2 align="center">ラーメン</h2>
+        <h2 align="center" id="ramen">ラーメン</h2>
         <div class="container">
             <div class="card">
                 <model-viewer
@@ -234,7 +260,7 @@
             </div>
         </div>
 
-        <h2 align="center">そば・うどん</h2>
+        <h2 align="center" id="soba_udon">そば・うどん</h2>
         <div class="container">
             <div class="card">
                 <model-viewer
@@ -305,7 +331,7 @@
                 </section>
             </div>
         </div>
-        <h2 align="center">単品</h2>
+        <h2 align="center" id="tanpin">単品</h2>
         <div class="container">
             <div class="card">
                 <model-viewer
@@ -331,5 +357,6 @@
             </div>
         </div>
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>

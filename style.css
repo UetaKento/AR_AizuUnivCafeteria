@@ -13,6 +13,40 @@ model-viewer {
     background-color: #ffffff;
   /*   --poster-color: #ffffff00; */
   }
+
+  .panel {
+    border: 1px solid #acac;
+    border-left: none;
+    border-right:none;
+    background-color: white;
+    padding: 20px 20px;
+    display: none;
+  }
+  .box {
+    background-color: #eee;
+    display: block;
+    display: inline-block;
+    width: 50%;
+    border: 1px solid #acac;
+  }
+  .btn{
+    display: block;
+    flex-grow: 1;
+    width: 100%;
+    padding: 20px;
+    background-color: inherit;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+  }
+  .btn:hover {
+    background-color: #ddd;
+  }
+  .fas {
+    float: right;
+  }
+  
   .container {
     display: flex;
     flex-direction: row;
