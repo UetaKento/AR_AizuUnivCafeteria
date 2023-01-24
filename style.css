@@ -68,9 +68,21 @@ model-viewer {
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  .ramen_lazy_load_poster {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 10%;
+    background-image: url("imeges/Logo_ramen.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   
   .button_load {
-    background-image: url("imeges/Load-logo-white.svg");
+    background-image: url("imeges/Logo_load_white.svg");
     background-repeat: no-repeat;
     background-size: 24px 24px;
     background-position: 6% 50%;
