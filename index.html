@@ -56,6 +56,7 @@
                 </section>
             </div>
         </div>
+
         <h2 align="center">カレーライス</h2>
         <div class="container">
             <div class="card">
@@ -150,6 +151,7 @@
                 </section>
             </div>
         </div>
+
         <h2 align="center">ラーメン</h2>
         <div class="container">
             <div class="card">
@@ -221,78 +223,103 @@
                 </section>
             </div>
         </div>
+
         <h2 align="center">そば・うどん</h2>
         <div class="container">
             <div class="card">
                 <model-viewer
-                id="Syo-yuRamen_lazy_load"
-                src="3dmodels/Syo-yuRamen/Syo-yuRamen.glb"
-                ios-src="3dmodels/Syo-yuRamen/Syo-yuRamen.usdz"
-                alt="醤油ラーメンの3Dモデル"
+                id="KakeSoba_lazy_load"
+                src="3dmodels/KakeSoba/KakeSoba.glb"
+                ios-src="3dmodels/KakeSoba/KakeSoba.usdz"
+                alt="かけそばの3Dモデル"
                 shadow-intensity="1"
                 camera-controls
                 touch-action="pan-y"
                 reveal="manual"
                 ar>
-                    <div class="ramen_lazy_load_poster" slot="poster"></div>
-                    <div id="Syo-yuRamen" class="button_load" slot="poster">モデルを表示</div>
+                    <div class="soba_udon_lazy_load_poster" slot="poster"></div>
+                    <div id="KakeSoba" class="button_load" slot="poster">モデルを表示</div>
                 </model-viewer>
                 <script>
-                    document.querySelector('#Syo-yuRamen').addEventListener('click', () => 
-                    document.querySelector('#Syo-yuRamen_lazy_load').dismissPoster());
+                    document.querySelector('#KakeSoba').addEventListener('click', () => 
+                    document.querySelector('#KakeSoba_lazy_load').dismissPoster());
                 </script>
                 <section class="attribution">
-                        <h1>醤油ラーメン</h1>
+                        <h1>かけそば</h1>
                 </section>
             </div>
 
             <div class="card">
                 <model-viewer
-                id="MisoRamen_lazy_load"
-                src="3dmodels/MisoRamen/MisoRamen.glb"
-                ios-src="3dmodels/MisoRamen/MisoRamen.usdz"
-                alt="味噌ラーメンの3Dモデル"
+                id="SansaiSoba_lazy_load"
+                src="3dmodels/SansaiSoba/SansaiSoba.glb"
+                ios-src="3dmodels/SansaiSoba/SansaiSoba.usdz"
+                alt="山菜そばの3Dモデル"
                 shadow-intensity="1"
                 camera-controls
                 touch-action="pan-y"
                 reveal="manual"
                 ar>
-                    <div class="ramen_lazy_load_poster" slot="poster"></div>
-                    <div id="MisoRamen" class="button_load" slot="poster">モデルを表示</div>
+                    <div class="soba_udon_lazy_load_poster" slot="poster"></div>
+                    <div id="SansaiSoba" class="button_load" slot="poster">モデルを表示</div>
                 </model-viewer>
                 <script>
-                    document.querySelector('#MisoRamen').addEventListener('click', () => 
-                    document.querySelector('#MisoRamen_lazy_load').dismissPoster());
+                    document.querySelector('#SansaiSoba').addEventListener('click', () => 
+                    document.querySelector('#SansaiSoba_lazy_load').dismissPoster());
                 </script>
                 <section class="attribution">
-                        <h1>味噌ラーメン</h1>
+                        <h1>山菜そば</h1>
                 </section>
             </div>
 
             <div class="card">
                 <model-viewer
-                id="TonkotsuRamen_lazy_load"
-                src="3dmodels/TonkotsuRamen/TonkotsuRamen.glb"
-                ios-src="3dmodels/TonkotsuRamen/TonkotsuRamen.usdz"
-                alt="豚骨ラーメンの3Dモデル"
+                id="TempuraSoba_lazy_load"
+                src="3dmodels/TempuraSoba/TempuraSoba.glb"
+                ios-src="3dmodels/TempuraSoba/TempuraSoba.usdz"
+                alt="天ぷらそばの3Dモデル"
                 shadow-intensity="1"
                 camera-controls
                 touch-action="pan-y"
                 reveal="manual"
                 ar>
-                    <div class="ramen_lazy_load_poster" slot="poster"></div>
-                    <div id="TonkotsuRamen" class="button_load" slot="poster">モデルを表示</div>
+                    <div class="soba_udon_lazy_load_poster" slot="poster"></div>
+                    <div id="TempuraSoba" class="button_load" slot="poster">モデルを表示</div>
                 </model-viewer>
                 <script>
-                    document.querySelector('#TonkotsuRamen').addEventListener('click', () => 
-                    document.querySelector('#TonkotsuRamen_lazy_load').dismissPoster());
+                    document.querySelector('#TempuraSoba').addEventListener('click', () => 
+                    document.querySelector('#TempuraSoba_lazy_load').dismissPoster());
                 </script>
                 <section class="attribution">
-                        <h1>豚骨ラーメン</h1>
+                        <h1>天ぷらそば</h1>
                 </section>
             </div>
         </div>
         <h2 align="center">単品</h2>
+        <div class="container">
+            <div class="card">
+                <model-viewer
+                id="YasaiItame_lazy_load"
+                src="3dmodels/YasaiItame/YasaiItame.glb"
+                ios-src="3dmodels/YasaiItame/YasaiItame.usdz"
+                alt="かけそばの3Dモデル"
+                shadow-intensity="1"
+                camera-controls
+                touch-action="pan-y"
+                reveal="manual"
+                ar>
+                    <div class="tanpin_lazy_load_poster" slot="poster"></div>
+                    <div id="YasaiItame" class="button_load" slot="poster">モデルを表示</div>
+                </model-viewer>
+                <script>
+                    document.querySelector('#YasaiItame').addEventListener('click', () => 
+                    document.querySelector('#YasaiItame_lazy_load').dismissPoster());
+                </script>
+                <section class="attribution">
+                        <h1>野菜炒め</h1>
+                </section>
+            </div>
+        </div>
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     </body>
 </html>

@@ -62,7 +62,7 @@ model-viewer {
     left: 0;
     right: 0;
     top: 0;
-    bottom: 10%;
+    bottom: 12%;
     background-image: url("imeges/Logo_curry.png");
     background-size: auto;
     background-repeat: no-repeat;
@@ -76,6 +76,30 @@ model-viewer {
     top: 0;
     bottom: 10%;
     background-image: url("imeges/Logo_ramen.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .soba_udon_lazy_load_poster {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 10%;
+    background-image: url("imeges/Logo_soba_udon.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .tanpin_lazy_load_poster {
+    position: absolute;
+    left: 0;
+    right: 5%;
+    top: 0;
+    bottom: 12%;
+    background-image: url("imeges/Logo_tanpin.png");
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
