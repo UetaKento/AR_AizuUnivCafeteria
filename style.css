@@ -7,6 +7,29 @@ body {
     /* font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif; */
     font-family: serif;
 }
+h1 {
+    font-size: 5rem;
+    /* word-break: keep-all; */
+}
+h2 {
+    font-size: 4rem;
+}
+
+.how2use {
+    text-align: center;
+    font-size: 2rem;
+    word-break: keep-all;
+}
+
+.disply_pc {
+    /* display: none !important; */
+    display: none;
+}
+
+.disply_smapho {
+    /* display: block !important; */
+    display: block;
+}
 
 model-viewer {
     width: 100%;
@@ -55,6 +78,14 @@ model-viewer {
     .box {
         display:none;
     }
+    .disply_pc {
+        /* display: block !important; */
+        display: block;
+    }
+    .disply_smapho {
+        /* display: none !important; */
+        display: none;
+    }
 }
 /*-----------------------------------------*/
 
@@ -66,7 +97,7 @@ model-viewer {
 }
   
 .card {
-    margin: 3em auto;
+    margin: -2.5rem auto 9rem;
     display: flex;
     flex-direction: column;
     width: 250px;
@@ -86,10 +117,16 @@ model-viewer {
     margin: 1em;
 }
 
-.attribution h1 {
+.attribution_discription{
+    font-size: 2rem;
     color: black;
     margin: 1rem auto 0.25em auto;
 }
+
+/* .attribution h1 {
+    color: black;
+    margin: 1rem auto 0.25em auto;
+} */
 
 .donmono_lazy_load_poster {
     position: absolute;
