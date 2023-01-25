@@ -9,10 +9,15 @@ body {
 }
 h1 {
     font-size: 5rem;
-    /* word-break: keep-all; */
 }
+
 h2 {
     font-size: 4rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    border-bottom: solid;
 }
 
 .how2use {
@@ -22,12 +27,10 @@ h2 {
 }
 
 .disply_pc {
-    /* display: none !important; */
     display: none;
 }
 
 .disply_smapho {
-    /* display: block !important; */
     display: block;
 }
 
@@ -79,11 +82,9 @@ model-viewer {
         display:none;
     }
     .disply_pc {
-        /* display: block !important; */
         display: block;
     }
     .disply_smapho {
-        /* display: none !important; */
         display: none;
     }
 }
@@ -97,7 +98,7 @@ model-viewer {
 }
   
 .card {
-    margin: -2.5rem auto 9rem;
+    margin: -1rem auto 9rem;
     display: flex;
     flex-direction: column;
     width: 250px;
