@@ -9,15 +9,26 @@ body {
 }
 h1 {
     font-size: 5rem;
-    word-break: keep-all;
+    /* word-break: keep-all; */
 }
 h2 {
     font-size: 4rem;
 }
-.smapho_discription{
+
+.how2use {
     text-align: center;
     font-size: 2rem;
     word-break: keep-all;
+}
+
+.disply_pc {
+    /* display: none !important; */
+    display: none;
+}
+
+.disply_smapho {
+    /* display: block !important; */
+    display: block;
 }
 
 model-viewer {
@@ -67,9 +78,14 @@ model-viewer {
     .box {
         display:none;
     }
-    /* .smapho_discription{
+    .disply_pc {
+        /* display: block !important; */
+        display: block;
+    }
+    .disply_smapho {
+        /* display: none !important; */
         display: none;
-    } */
+    }
 }
 /*-----------------------------------------*/
 
