@@ -7,6 +7,16 @@ body {
     /* font-family: Verdana, Roboto, "Droid Sans", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif; */
     font-family: serif;
 }
+h1 {
+    font-size: 5rem;
+}
+h2 {
+    font-size: 4rem;
+}
+.smapho_discription{
+    text-align: center;
+    font-size: 2rem;
+}
 
 model-viewer {
     width: 100%;
@@ -55,6 +65,9 @@ model-viewer {
     .box {
         display:none;
     }
+    /* .smapho_discription{
+        display: none;
+    } */
 }
 /*-----------------------------------------*/
 
@@ -86,10 +99,16 @@ model-viewer {
     margin: 1em;
 }
 
-.attribution h1 {
+.attribution_discription{
+    font-size: 2rem;
     color: black;
     margin: 1rem auto 0.25em auto;
 }
+
+/* .attribution h1 {
+    color: black;
+    margin: 1rem auto 0.25em auto;
+} */
 
 .donmono_lazy_load_poster {
     position: absolute;
