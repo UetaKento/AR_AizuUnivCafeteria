@@ -5,14 +5,25 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="会津大学の学食を3Dで確認したり、ARでお手元に表示することができるサイトです。">
-        <meta name="keywords" content="会津大学, 学食, 3dmodel, ar">
+        <meta name="description" content="会津大学の食堂で販売している商品を3Dで確認したり、ARでお手元に表示することができるサイトです。学食のご利用の際には、ぜひご活用下さい。">
+        <meta name="keywords" content="会津大学, 食堂, 学食, 3d, ar">
+        <link rel="icon" href="imeges/favicon.ico">
+        <link rel="apple-touch-icon" href="imeges/apple-touch-icon.png" sizes="180x180">
+        <link rel="icon" type="image/png" href="imeges/android-icon.png" sizes="192x192">
+
         <!-- <meta property="og:url" content="" /> -->
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="会津大学 3D学食"/>
-        <meta property="og:description" content="会津大学の学食を3Dで確認したり、ARでお手元に表示することができるサイトです。" />
+        <meta property="og:description" content="会津大学の食堂で販売している商品を3Dで確認したり、ARでお手元に表示することができるサイトです。学食のご利用の際には、ぜひご活用下さい。" />
         <meta property="og:site_name" content="Netlify"/>
-        <meta property="og:image" content="https://drive.google.com/file/d/1U2W8khKlSkxwEe4K7JDondW4gJUYYu1q/view?usp=sharing"/>
+        <meta property="og:image" content="https://i.gyazo.com/4cabbc1bb07a19ec0a2e0d5cbcc9dad3.jpg"/>
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="KenTy_103" />
+        <meta name="twitter:title" content="会津大学 3D学食" />
+        <meta name="twitter:description" content="会津大学の食堂で販売している商品を3Dで確認したり、ARでお手元に表示することができるサイトです。学食のご利用の際には、ぜひご活用下さい。" />
+        <meta name="twitter:image" content="https://i.gyazo.com/4cabbc1bb07a19ec0a2e0d5cbcc9dad3.jpg" />
+
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/a448e2b900.js" crossorigin="anonymous"></script>
@@ -25,19 +36,19 @@
             </button>
             <div class="panel">
               <p style="text-align: center;"><a href="#donmono">
-                <img src="imeges/Logo_donburi.png" alt="aaa" width="20px" height="20px">
+                <img src="imeges/Logo_donburi.png" alt="aaa" width="25px" height="25px">
               </a></p>
               <p style="text-align: center;"><a href="#curry">
-                <img src="imeges/Logo_curry.png" alt="aaa" width="20px" height="20px">
+                <img src="imeges/Logo_curry.png" alt="aaa" width="25px" height="25px">
               </a></p>
               <p style="text-align: center;"><a href="#ramen">
-                <img src="imeges/Logo_ramen.png" alt="aaa" width="20px" height="20px">
+                <img src="imeges/Logo_ramen.png" alt="aaa" width="25px" height="25px">
               </a></p>
               <p style="text-align: center;"><a href="#soba_udon">
-                <img src="imeges/Logo_soba_udon.png" alt="aaa" width="20px" height="20px">
+                <img src="imeges/Logo_soba_udon.png" alt="aaa" width="25px" height="25px">
               </a></p>
               <p style="text-align: center;"><a href="#tanpin">
-                <img src="imeges/Logo_tanpin.png" alt="aaa" width="20px" height="20px">
+                <img src="imeges/Logo_tanpin.png" alt="aaa" width="25px" height="25px">
               </a></p>
             </div>
         </div>
@@ -49,9 +60,9 @@
             </h1>
             <p class="how2use">
                 <span style="font-size: 30px;">使い方<br></span>
-                「モデル表示」のボタンを押すと、選択した食品の3Dモデルが表示されます。<br>
+                「モデル表示」のボタンを押すと、選んだ食品のモデルが表示されます。<br>
                 また、スマホやタブレットでは
-                <img src="imeges/Logo_model_viewer.jpeg" alt="aaa" width="20px" height="20px">ボタンを押すとARモードで表示することができます。
+                <img src="imeges/Logo_model_viewer.jpeg" alt="aaa" width="20px" height="20px">ボタンを押すとARモードで表示できます。
             </p>
         </div>
         <div class="disply_smapho">
@@ -62,10 +73,10 @@
             <p class="how2use">
                 <span style="font-size: 30px;">使い方<br></span>
                 「モデル表示」のボタンを押すと、<br>
-                選択した食品の3Dモデルが表示されます。<br>
+                選んだ食品のモデルが表示されます。<br>
                 また、スマホやタブレットでは<br>
                 <img src="imeges/Logo_model_viewer.jpeg" alt="aaa" width="20px" height="20px">ボタンを押すと<br>
-                ARモードで表示することができます。
+                ARモードで表示できます。
             </p>
         </div>
         <h2 style="text-align: center;" id="donmono">丼もの</h2>
@@ -94,7 +105,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        ソースカツ丼
+                        ソースカツ丼 税込605円
                     </div>
                 </section>
             </div>
@@ -120,7 +131,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        ソースささみカツ丼
+                        ソースささみカツ丼 税込440円
                     </div>                        
                 </section>
             </div>
@@ -149,7 +160,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        カレーM
+                        カレーM 税込385円
                     </div>
                 </section>
             </div>
@@ -175,7 +186,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        カツカレー
+                        カツカレー 税込495円
                     </div>
                 </section>
             </div>
@@ -201,7 +212,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        唐揚げカレー
+                        唐揚げカレー 税込495円
                     </div>
                 </section>
             </div>
@@ -227,7 +238,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        金沢カレー
+                        金沢カレー 税込495円
                     </div>
                 </section>
             </div>
@@ -256,7 +267,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        醤油ラーメン
+                        醤油ラーメン 税込385円
                     </div>
                 </section>
             </div>
@@ -282,7 +293,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        味噌ラーメン
+                        味噌ラーメン 税込385円
                     </div>
                 </section>
             </div>
@@ -308,7 +319,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        豚骨ラーメン
+                        豚骨ラーメン 税込440円
                     </div>
                 </section>
             </div>
@@ -337,7 +348,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        かけそば
+                        かけそば 税込275円
                     </div>
                 </section>
             </div>
@@ -363,7 +374,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        山菜そば
+                        山菜そば 税込330円
                     </div>
                 </section>
             </div>
@@ -389,7 +400,7 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        天ぷらそば
+                        天ぷらそば 税込385円
                     </div>
                 </section>
             </div>
@@ -417,11 +428,14 @@
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
-                        野菜炒め
+                        野菜炒め 税込110円
                     </div>
                 </section>
             </div>
         </div>
+        <p style="text-align: center;"><a href="https://twitter.com/KenTy_103">
+            <img src="imeges/Logo_twitter_black.svg" alt="aaa" width="32px" height="32px">
+          </a></p>
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
         <script src="./script.js"></script>
     </body>
