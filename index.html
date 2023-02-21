@@ -99,8 +99,13 @@
                     <!-- <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
                         👋 Activate AR
                     </button> -->
+                    <input id="x" value="0.5" class="number" type="hidden">
+                    <input id="y" value="1" class="number" type="hidden">
+                    <input id="z" value="1" class="number" type="hidden">
                 </model-viewer>
                 <script>
+                    const modelViewerTransform = document.querySelector("model-viewer#SauceKatsudon_lazy_load");
+                    modelViewerTransform.scale = `${x.value} ${y.value} ${z.value}`;
                     document.querySelector('#SauceKatsudon').addEventListener('click', () => 
                     document.querySelector('#SauceKatsudon_lazy_load').dismissPoster());
                 </script>
