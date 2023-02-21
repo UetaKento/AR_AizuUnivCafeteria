@@ -212,13 +212,13 @@ model-viewer {
 @media screen and (min-width:600px) and ( max-width:1050px) {
    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
    model-viewer {
-       height: 700px;
+       height: 400px;
    }
    .card {
-       width: 700px;  
+       width: 400px;  
    }
    .box {
-       width: 30%;
+       width: 20%;
        right: 5%;
        /* display: none; */
    }
