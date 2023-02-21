@@ -113,13 +113,18 @@
                     const updateScale = () => {
                         modelViewerTransform.updateFraming();
                     };
+                    x.addEventListener('input', () => {
+                        updateScale();
+                    });
+                    y.addEventListener('input', () => {
+                        updateScale();
+                    });
+                    z.addEventListener('input', () => {
+                        updateScale();
+                    });
                     document.querySelector('#SauceKatsudon').addEventListener('click', () => 
                     document.querySelector('#SauceKatsudon_lazy_load').dismissPoster()
                     );
-                    document.querySelector('#SauceKatsudon').addEventListener('click', () => 
-                    document.querySelector("model-viewer#SauceKatsudon_lazy_load").updateFraming()
-                    );
-
                 </script>
                 <section class="attribution">
                     <div class="attribution_discription">
