@@ -220,9 +220,7 @@ model-viewer {
    .box {
        width: 30%;
        right: 5%;
-   }
-   .box {
-       display: none;
+       /* display: none; */
    }
    .disply_pc {
        display: block;
