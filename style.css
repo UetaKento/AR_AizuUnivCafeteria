@@ -62,7 +62,7 @@ model-viewer {
     background-color: #eee;
     display: block;
     display: inline-block;
-    width: 30%;
+    width: 10%;
     border: 1px solid #000000;
     position: fixed;
     right: 3%;
@@ -216,6 +216,10 @@ model-viewer {
    }
    .card {
        width: 500px;  
+   }
+   .box {
+       width: 30%;
+       right: 5%;
    }
    .box {
        display: none;
