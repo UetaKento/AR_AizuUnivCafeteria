@@ -114,7 +114,8 @@
                         modelViewerTransform.updateFraming();
                     };
                     document.querySelector('#SauceKatsudon').addEventListener('click', () => 
-                    document.querySelector('#SauceKatsudon_lazy_load').dismissPoster()
+                    document.querySelector('#SauceKatsudon_lazy_load').dismissPoster(),
+                    document.querySelector("model-viewer#SauceKatsudon_lazy_load").updateFraming()
                     );
                 </script>
                 <section class="attribution">
