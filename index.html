@@ -109,9 +109,8 @@
                     const x = document.querySelector('#x');
                     const y = document.querySelector('#y');
                     const z = document.querySelector('#z');
-                    modelViewerTransform.scale = `${x.value} ${y.value} ${z.value}`;
                     const updateScale = () => {
-                        modelViewerTransform.updateFraming();
+                        modelViewerTransform.scale = `${x.value} ${y.value} ${z.value}`;
                     };
                     x.addEventListener('input', () => {
                         updateScale();
