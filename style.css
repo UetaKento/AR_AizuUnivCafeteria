@@ -88,17 +88,6 @@ model-viewer {
     float: right;
     z-index: 1;
 }
-@media screen and (min-width:480px) {
-    .box {
-        display:none;
-    }
-    .disply_pc {
-        display: block;
-    }
-    .disply_smapho {
-        display: none;
-    }
-}
 /*-----------------------------------------*/
 
 .container {
@@ -216,4 +205,39 @@ model-viewer {
     left: 50%;
     bottom: 26%;
     transform: translate3d(-50%, -50%, 0);
+}
+@media screen and (min-width:480px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+}
+@media screen and (min-width:600px) and ( max-width:1024px) {
+   /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+   model-viewer {
+       height: 500px;
+   }
+   .card {
+       width: 500px;  
+   }
+   .box {
+       width: 30%;
+       right: 5%;
+       /* display: none; */
+   }
+}
+@media screen and (min-width:1024px) {
+   /*　画面サイズが1024pxからはここを読み込む　*/
+   model-viewer {
+       height: 500px;
+   }
+   .card {
+       width: 500px;
+   }
+   .box {
+       display: none;
+   }
+   .disply_pc {
+       display: block;
+   }
+   .disply_smapho {
+       display: none;
+   }
 }
