@@ -222,12 +222,6 @@ model-viewer {
        right: 5%;
        /* display: none; */
    }
-   .disply_pc {
-       display: block;
-   }
-   .disply_smapho {
-       display: none;
-   }
 }
 @media screen and (min-width:1024px) {
    /*　画面サイズが1024pxからはここを読み込む　*/
