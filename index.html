@@ -88,7 +88,6 @@
                 ios-src="3dmodels/SauceKatsudon/SauceKatsudon.usdz"
                 alt="ソースカツ丼の3Dモデル"
                 shadow-intensity="1"
-                scale="0.5 0.5 0.5"
                 camera-controls
                 max-camera-orbit="Infinity 90deg auto"
                 touch-action="pan-y"
@@ -105,24 +104,29 @@
                     <input id="z" value="1" class="number" type="hidden">
                 </model-viewer>
                 <script>
-                    const modelViewerTransform = document.querySelector("model-viewer#SauceKatsudon_lazy_load");
-                    const x = document.querySelector('#x');
-                    const y = document.querySelector('#y');
-                    const z = document.querySelector('#z');
-                    const updateScale = () => {
-                        modelViewerTransform.scale = `${x.value} ${y.value} ${z.value}`;
-                    };
-                    x.addEventListener('load', () => {
-                        updateScale();
-                    });
-                    y.addEventListener('load', () => {
-                        updateScale();
-                    });
-                    z.addEventListener('load', () => {
-                        updateScale();
-                    });
+                    
+                    // const modelViewerTransform = document.querySelector("model-viewer#SauceKatsudon_lazy_load");
+                    // const x = document.querySelector('#x');
+                    // const y = document.querySelector('#y');
+                    // const z = document.querySelector('#z');
+                    // const updateScale = () => {
+                    //     modelViewerTransform.scale = `${x.value} ${y.value} ${z.value}`;
+                    // };
+                    // x.addEventListener('load', () => {
+                    //     updateScale();
+                    // });
+                    // y.addEventListener('load', () => {
+                    //     updateScale();
+                    // });
+                    // z.addEventListener('load', () => {
+                    //     updateScale();
+                    // });
+
                     document.querySelector('#SauceKatsudon').addEventListener('click', () => 
                     document.querySelector('#SauceKatsudon_lazy_load').dismissPoster()
+                    );
+                    document.querySelector('#donmono').addEventListener('load', ()=>
+                    document.querySelector("model-viewer#SauceKatsudon_lazy_load").scale = `${0.5} ${1} ${1}`
                     );
                 </script>
                 <section class="attribution">
