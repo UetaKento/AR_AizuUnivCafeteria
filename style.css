@@ -206,11 +206,11 @@ model-viewer {
     bottom: 26%;
     transform: translate3d(-50%, -50%, 0);
 }
-@media screen and (min-width:480px) {
-    /*　画面サイズが480pxからはここを読み込む　*/
+@media screen and (min-width:480px) and ( max-width:600px){
+    /*　画面サイズが480pxから600pxまではここを読み込む　*/
 }
 @media screen and (min-width:600px) and ( max-width:1050px) {
-   /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+   /*　画面サイズが600pxから1050pxまではここを読み込む　*/
    model-viewer {
        height: 400px;
    }
@@ -218,18 +218,18 @@ model-viewer {
        width: 400px;  
    }
    .box {
-       width: 20%;
-       right: 5%;
-       /* display: none; */
+       /* width: 20%;
+       right: 5%; */
+       display: none;
    }
 }
 @media screen and (min-width:1050px) {
-   /*　画面サイズが1024pxからはここを読み込む　*/
+   /*　画面サイズが1050pxからはここを読み込む　*/
    model-viewer {
-       height: 500px;
+       height: 600px;
    }
    .card {
-       width: 500px;
+       width: 600px;
    }
    .box {
        display: none;
