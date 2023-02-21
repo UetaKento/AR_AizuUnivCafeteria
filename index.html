@@ -100,17 +100,19 @@
                     <!-- <button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
                         👋 Activate AR
                     </button> -->
-                    <!-- <input id="x" value="0.5" class="number" type="hidden">
+                    <input id="x" value="0.5" class="number" type="hidden">
                     <input id="y" value="1" class="number" type="hidden">
-                    <input id="z" value="1" class="number" type="hidden"> -->
+                    <input id="z" value="1" class="number" type="hidden">
                 </model-viewer>
                 <script>
-                    // const modelViewerTransform = document.querySelector("model-viewer#SauceKatsudon_lazy_load");
-                    // const x = document.querySelector('#x');
-                    // const y = document.querySelector('#y');
-                    // const z = document.querySelector('#z');
-                    // modelViewerTransform.scale = `${x.value} ${y.value} ${z.value}`;
-                    // modelViewerTransform.updateFraming();
+                    const modelViewerTransform = document.querySelector("model-viewer#SauceKatsudon_lazy_load");
+                    const x = document.querySelector('#x');
+                    const y = document.querySelector('#y');
+                    const z = document.querySelector('#z');
+                    modelViewerTransform.scale = `${x.value} ${y.value} ${z.value}`;
+                    const updateScale = () => {
+                        modelViewerTransform.updateFraming();
+                    };
                     document.querySelector('#SauceKatsudon').addEventListener('click', () => 
                     document.querySelector('#SauceKatsudon_lazy_load').dismissPoster()
                     );
