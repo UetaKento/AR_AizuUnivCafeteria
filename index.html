@@ -112,13 +112,13 @@
                     const updateScale = () => {
                         modelViewerTransform.scale = `${x.value} ${y.value} ${z.value}`;
                     };
-                    x.addEventListener('input', () => {
+                    x.addEventListener('load', () => {
                         updateScale();
                     });
-                    y.addEventListener('input', () => {
+                    y.addEventListener('load', () => {
                         updateScale();
                     });
-                    z.addEventListener('input', () => {
+                    z.addEventListener('load', () => {
                         updateScale();
                     });
                     document.querySelector('#SauceKatsudon').addEventListener('click', () => 
